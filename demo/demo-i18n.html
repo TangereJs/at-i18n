@@ -1,0 +1,27 @@
+<!doctype html>
+<link rel="import" href="../../tangere/Tangere.html">
+<link rel="import" href="../at-i18n-behavior.html">
+
+<dom-module id="demo-i18n">
+
+  <template>
+    Key Hello: <b>[[T('hello')]]</b>    
+    <br>Global: <b>[[T('The capital of {0} is {1}.', 'France', 'Paris')]]</b>
+    <br>Element specific: <b>[[T('My name is {0} and I am from {1}.', 'Sam Adams', 'Boston')]]</b>
+    
+    <br>Code: <b><span id="test"></span></b>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'demo-i18n',
+      behaviors: [
+                Tangere.behaviors.i18n
+            ],
+      ready: function () {
+       Polymer.dom(this.$.test).innerHTML = this.T('My name is {0} and I am from {1}.', 'James Cook', 'Newcastle');
+      }
+    });
+  </script>
+
+</dom-module>

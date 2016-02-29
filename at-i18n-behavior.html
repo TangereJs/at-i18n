@@ -1,0 +1,73 @@
+<link rel="import" href="../tangere/Tangere.html">
+
+
+<script>
+  Polymer.atI18nLocales = Polymer.atI18nLocales || {
+
+    add: function (localName, locale, translations) {
+      this[localName] = this[localName] || {};
+      this[localName][locale.toLowerCase()] = translations;
+    }
+
+  };
+</script>
+
+<script src="lang/en.js"></script>
+<script src="lang/de.js"></script>
+<script src="lang/sr.js"></script>
+
+<script>
+  Tangere.behaviors.i18n = {
+
+
+    ready: function () {
+
+    },
+
+
+    T: function (key) {
+      if (!this._i18nGlobal) this._initialize();
+      var args = Array.prototype.slice.call(arguments, 1);
+      var msg = undefined;
+      if(!msg && this._i18n) msg = this._i18n[key]; // check for module specific msg
+      if(!msg) msg = this._i18nGlobal[key]; // fallback to global msg
+      if (!msg) msg = key; // fallback to key if no msg is available
+      return this._format(msg, args);
+    },
+
+    _initialize: function () {
+
+      if (this._i18n) return;
+
+      var lang = navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage;
+
+      this._i18n = this._getMsgForModule(this.localName, lang);
+      this._i18nGlobal = this._getMsgForModule("global", lang);
+    },
+
+    _getMsgForModule(module, locale) {
+      var elementLocales = Polymer.atI18nLocales[module];
+      var result = undefined;
+      if(!elementLocales) return result; // no messages for module found
+      
+      while (locale) {
+        result = elementLocales[locale.toLowerCase()];
+        if (result) {
+          break;
+        } else {
+          // ignore variant so en-US -> en,    de-AT -> de
+          locale = locale.substring(0, locale.lastIndexOf('-'));
+        }
+      }
+
+      return result;
+    },
+
+    _format: function (format, args) {
+      return format.replace(/{(\d+)}/g, function (match, number) {
+        return typeof args[number] != 'undefined' ? args[number] : match;
+      });
+    }
+
+  };
+</script>
