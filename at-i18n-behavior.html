@@ -41,6 +41,10 @@
 
       var lang = navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage;
 
+      if (navigator.languages !== undefined) {
+        lang = navigator.languages[0];
+      }
+
       this._i18n = this._getMsgForModule(this.localName, lang);
       this._i18nGlobal = this._getMsgForModule("global", lang);
     },
@@ -49,7 +53,7 @@
       var elementLocales = Polymer.atI18nLocales[module];
       var result = undefined;
       if(!elementLocales) return result; // no messages for module found
-      
+
       while (locale) {
         result = elementLocales[locale.toLowerCase()];
         if (result) {
