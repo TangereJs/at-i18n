@@ -25,6 +25,9 @@
     },
 
 
+    _localizedFormat: function(name) {
+      return this.T("$format-" + name);
+    },
     T: function (key) {
       if (!this._i18nGlobal) this._initialize();
       var args = Array.prototype.slice.call(arguments, 1);

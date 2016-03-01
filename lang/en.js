@@ -1,6 +1,11 @@
 !function() {
-    Polymer.atI18nLocales.add('global', 'en', {               
-        
+    Polymer.atI18nLocales.add('global', 'en', {              
+      
+        // format definitions
+        '$format-date': 'M/D/YYYY',
+        '$format-time': 'HH:mm:ss',
+        '$format-datetime': 'D/M/YYYY HH:mm:ss',
+      
         // at-form-*
        'This field is required.': 'This field is required.'      
     });

@@ -10,6 +10,7 @@
     <br>Element specific: <b>[[T('My name is {0} and I am from {1}.', 'Sam Adams', 'Boston')]]</b>
     
     <br>Code: <b><span id="test"></span></b>
+    <br>date format: <b><span id="dateFormat"></span></b>
   </template>
 
   <script>
@@ -20,6 +21,7 @@
             ],
       ready: function () {
        Polymer.dom(this.$.test).innerHTML = this.T('My name is {0} and I am from {1}.', 'James Cook', 'Newcastle');
+        Polymer.dom(this.$.dateFormat).innerHTML = this._localizedFormat("date");
       }
     });
   </script>

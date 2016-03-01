@@ -2,6 +2,11 @@
     Polymer.atI18nLocales.add('global', 'de', {               
         'The capital of {0} is {1}.': '{1} ist die Hauptstadt von {0}.',
       
+        // format definitions
+        '$format-date': 'DD.MM.YYYY',
+        '$format-time': 'HH:mm:ss',
+        '$format-datetime': 'DD.MM.YYYY HH:mm:ss',
+      
         // at-form-*
        'This field is required.': 'In diesem Feld ist eine Eingabe erforderlich.'
     });
