@@ -24,7 +24,8 @@
 
         // at-form-*
         'Input required': 'Unos je obavezan',
-        'This field is required.': 'Ovo polje je obavezno.'
+        'This field is required.': 'Ovo polje je obavezno.',
+        'Value {0} is not in a correct format': 'Vrednost {0} nije pravilno formatirana'
     });
 }();
 

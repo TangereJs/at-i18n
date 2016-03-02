@@ -24,7 +24,8 @@
 
     // at-form-*
     'Input required': 'Eingabe erforderlich',
-    'This field is required.': 'In diesem Feld ist eine Eingabe erforderlich.'
+    'This field is required.': 'In diesem Feld ist eine Eingabe erforderlich.',
+    'Value {0} is not in a correct format': 'Value {0} is not in a correct format'
   });
 }();
 
