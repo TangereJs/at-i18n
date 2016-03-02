@@ -23,7 +23,8 @@
         '{startDate} to {endDate}': 'od {startDate} do {endDate}',
 
         // at-form-*
-       'This field is required.': 'Ovo polje je obavezno.'
+        'Input required': 'Unos je obavezan',
+        'This field is required.': 'Ovo polje je obavezno.'
     });
 }();
 
