@@ -7,6 +7,9 @@
         '$format-time': 'HH:mm:ss',
         '$format-datetime': 'DD.MM.YYYY HH:mm:ss',
 
+        'Submit': 'Pošalji',
+        'Cancel': 'Otkaži',
+
         // at-form-*
        'This field is required.': 'Ovo polje je obavezno.'
     });
