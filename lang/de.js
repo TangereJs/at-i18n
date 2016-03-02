@@ -7,8 +7,20 @@
         '$format-time': 'HH:mm:ss',
         '$format-datetime': 'DD.MM.YYYY HH:mm:ss',
 
+        // at-carbon-action-button text
         'Submit': 'Einreichen',
         'Cancel': 'Stornieren',
+
+        // at-form-daterange range names
+        'Today': 'Heute',
+        'Yesterday': 'Gestern',
+        'Last 7 Days': 'Letzte 7 Tage',
+        'Last 30 Days': 'Letzte 30 Tage',
+        'This Month': 'In diesem Monat',
+        'Last Month': 'Letzter Monat',
+        'Custom': 'Angebot',
+
+        '{startDate} to {endDate}': '{startDate} to {endDate}',
 
         // at-form-*
        'This field is required.': 'In diesem Feld ist eine Eingabe erforderlich.'

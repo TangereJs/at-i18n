@@ -7,8 +7,20 @@
         '$format-time': 'HH:mm:ss',
         '$format-datetime': 'DD.MM.YYYY HH:mm:ss',
 
+        // at-carbon-action-button text
         'Submit': 'Pošalji',
         'Cancel': 'Otkaži',
+
+        // at-form-daterange range names
+        'Today': 'Danas',
+        'Yesterday': 'Juče',
+        'Last 7 Days': 'U prethodnih 7 dana',
+        'Last 30 Days': 'U prethodnih 30 dana',
+        'This Month': 'Ovog meseca',
+        'Last Month': 'Prehodnog meseca',
+        'Custom': 'Od do',
+
+        '{startDate} to {endDate}': 'od {startDate} do {endDate}',
 
         // at-form-*
        'This field is required.': 'Ovo polje je obavezno.'
