@@ -25,7 +25,9 @@
         // at-form-*
         'Input required': 'Unos je obavezan',
         'This field is required.': 'Ovo polje je obavezno.',
-        'Value {0} is not in a correct format': 'Vrednost {0} nije pravilno formatirana'
+        'Value {0} is not in a correct format': 'Vrednost {0} nije pravilno formatirana',
+        'You can not enter more than {maxChars} characters.': 'Možete uneti maksimalno {maxChars} karaktera.',
+        'You can not enter more than {maxLines} lines of text.': 'Možete uneti maksimalno {maxLines} linija teksta.'
     });
 }();
 

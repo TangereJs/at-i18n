@@ -25,7 +25,9 @@
     // at-form-*
     'Input required': 'Eingabe erforderlich',
     'This field is required.': 'In diesem Feld ist eine Eingabe erforderlich.',
-    'Value {0} is not in a correct format': 'Value {0} is not in a correct format'
+    'Value {0} is not in a correct format': 'Value {0} is not in a correct format',
+    'You can not enter more than {maxChars} characters.': 'You can not enter more than {maxChars} characters.',
+    'You can not enter more than {maxLines} lines of text.': 'You can not enter more than {maxLines} lines of text.'
   });
 }();
 
