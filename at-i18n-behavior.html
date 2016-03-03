@@ -37,16 +37,19 @@
       if (!msg) msg = key; // fallback to key if no msg is available
       return this._format(msg, args);
     },
-
-    _initialize: function () {
-
-      if (this._i18n) return;
-
+    getLocale: function () {
       var lang = navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage;
 
       if (navigator.languages !== undefined) {
         lang = navigator.languages[0];
       }
+      return lang;
+    },
+    _initialize: function () {
+
+      if (this._i18n) return;
+
+      var lang = this.getLocale();
 
       this._i18n = this._getMsgForModule(this.localName, lang);
       this._i18nGlobal = this._getMsgForModule("global", lang);
