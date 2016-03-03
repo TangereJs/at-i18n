@@ -5,7 +5,7 @@
     // format definitions
     '$format-date': 'DD.MM.YYYY',
     '$format-time': 'HH:mm:ss',
-    '$format-datetime': 'DD.MM.YYYY HH:mm:ss',
+    '$format-datetime': 'DD.MM.YYYY HH:mm',
 
     // at-carbon-action-button text
     'Submit': 'Speichern',
