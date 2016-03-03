@@ -26,8 +26,8 @@
         'Input required': 'Unos je obavezan',
         'This field is required.': 'Ovo polje je obavezno.',
         'Value {0} is not in a correct format': 'Vrednost {0} nije pravilno formatirana',
-        'You can not enter more than {maxChars} characters.': 'Možete uneti maksimalno {maxChars} karaktera.',
-        'You can not enter more than {maxLines} lines of text.': 'Možete uneti maksimalno {maxLines} linija teksta.'
+        'You can not enter more than {0} characters.': 'Možete uneti maksimalno {0} karaktera.',
+        'You can not enter more than {0} lines of text.': 'Možete uneti maksimalno {0} linija teksta.'
     });
 }();
 
