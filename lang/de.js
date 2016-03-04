@@ -20,7 +20,7 @@
     'Last Month': 'Letzter Monat',
     'Custom': 'Angebot',
 
-    '{startDate} to {endDate}': '{startDate} to {endDate}',
+    '{0} to {1}': '{0} to {1}',
 
     // at-form-*
     'Input required': 'Eingabe erforderlich',

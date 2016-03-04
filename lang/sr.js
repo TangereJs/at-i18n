@@ -20,7 +20,7 @@
         'Last Month': 'Prehodnog meseca',
         'Custom': 'Od do',
 
-        '{startDate} to {endDate}': 'od {startDate} do {endDate}',
+        '{0} to {1}': 'od {0} do {1}',
 
         // at-form-*
         'Input required': 'Unos je obavezan',
