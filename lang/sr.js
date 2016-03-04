@@ -27,7 +27,9 @@
         'This field is required.': 'Ovo polje je obavezno.',
         'Value {0} is not in a correct format': 'Vrednost {0} nije pravilno formatirana',
         'You can not enter more than {0} characters.': 'Možete uneti maksimalno {0} karaktera.',
-        'You can not enter more than {0} lines of text.': 'Možete uneti maksimalno {0} linija teksta.'
+        'You can not enter more than {0} lines of text.': 'Možete uneti maksimalno {0} linija teksta.',
+        'Start date is in invalid format. Enter start date in format {0}': 'Početni datum je u pogrešnom formatu. Unesite počenti datum u formatu {0}',
+        'End date is in invalid format. Enter end date in format {0}': 'Krajnji datum je u pogrešnom formatu. Unesite krajnji datum u formatu {0}'
     });
 }();
 
