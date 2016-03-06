@@ -1,20 +1,5 @@
-<link rel="import" href="../tangere/Tangere.html">
+<link rel="import" href="../tangere/tangere.html">
 
-
-<script>
-  Polymer.atI18nLocales = Polymer.atI18nLocales || {
-
-    add: function (localName, locale, translations) {
-      this[localName] = this[localName] || {};
-      this[localName][locale.toLowerCase()] = translations;
-    }
-
-  };
-</script>
-
-<script src="lang/en.js"></script>
-<script src="lang/de.js"></script>
-<script src="lang/sr.js"></script>
 
 <script>
   Tangere.behaviors.i18n = {
@@ -43,6 +28,8 @@
       if (navigator.languages !== undefined) {
         lang = navigator.languages[0];
       }
+
+      lang = Tangere.session.user.lang || lang;      
       return lang;
     },
     _initialize: function () {
@@ -55,7 +42,7 @@
       this._i18nGlobal = this._getMsgForModule("global", lang);
     },
 
-    _getMsgForModule(module, locale) {
+    _getMsgForModule: function(module, locale) {
       var elementLocales = Polymer.atI18nLocales[module];
       var result = undefined;
       if(!elementLocales) return result; // no messages for module found
