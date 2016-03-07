@@ -32,7 +32,17 @@
         'End date is in invalid format. Enter end date in format {0}': 'Krajnji datum je u pogrešnom formatu. Unesite krajnji datum u formatu {0}',
         'Select an image': 'Izaberi sliku',
         'Remove': 'Ukloni',
-        'Change': 'Promeni'
+        'Change': 'Promeni',
+        'Field value can not be changed': 'Vrednost polja se ne menja',
+        'Field is invisible': 'Polje je nevidljivo',
+        'Label': 'Oznaka',
+        'Maximum number of characters': 'Maksimalni broj karaktera',
+        'Name': 'Naziv',
+        'Value': 'Vrednost',
+        'Width (3 = small, 6 = default, 12 = wide)': 'Sirina (3 = usko, 6 = podrazumevano, 12 = široko)',
+        'Error Message': 'Poruka o grešci',
+        'Hint text': 'Objašnjenje',
+        'Value List': 'Lista vrednosti'
     });
 }();
 

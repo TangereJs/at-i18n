@@ -32,7 +32,17 @@
     'End date is in invalid format. Enter end date in format {0}': 'End date is in invalid format. Enter end date in format {0}',
     'Select an image': 'Select an image',
     'Remove': 'Remove',
-    'Change': 'Change'
+    'Change': 'Change',
+    'Field value can not be changed': 'Field value can not be changed',
+    'Field is invisible': 'Field is invisible',
+    'Label': 'Label',
+    'Maximum number of characters': 'Maximum number of characters',
+    'Name': 'Name',
+    'Value': 'Value',
+    'Width (3 = small, 6 = default, 12 = wide)': 'Width (3 = small, 6 = default, 12 = wide)',
+    'Error Message': 'Error message',
+    'Hint text': 'Hint text',
+    'Value List': 'Value List'
   });
 }();
 
