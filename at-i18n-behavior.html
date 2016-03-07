@@ -18,7 +18,7 @@
       var args = Array.prototype.slice.call(arguments, 1);
       var msg = undefined;
       if(!msg && this._i18n) msg = this._i18n[key]; // check for module specific msg
-      if(!msg) msg = this._i18nGlobal[key]; // fallback to global msg
+      if(!msg && this._i18nGlobal) msg = this._i18nGlobal[key]; // fallback to global msg
       if (!msg) msg = key; // fallback to key if no msg is available
       return this._format(msg, args);
     },
@@ -61,9 +61,18 @@
     },
 
     _format: function (format, args) {
-      return format.replace(/{(\d+)}/g, function (match, number) {
+      
+      // replace {n}
+      var fmt = format.replace(/{(\d+)}/g, function (match, number) {
         return typeof args[number] != 'undefined' ? args[number] : match;
       });
+
+      // replace [n]
+      fmt = fmt.replace(/\[(\d+)\]/g, function (match, number) {          
+        return typeof args[number] != 'undefined' ? args[number] : match;
+      });
+      
+      return fmt;
     }
 
   };
