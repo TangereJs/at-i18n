@@ -29,7 +29,10 @@
     'You can not enter more than {0} characters.': 'You can not enter more than {0} characters.',
     'You can not enter more than {0} lines of text.': 'You can not enter more than {0} lines of text.',
     'Start date is in invalid format. Enter start date in format {0}': 'Start date is in invalid format. Enter start date in format {0}',
-    'End date is in invalid format. Enter end date in format {0}': 'End date is in invalid format. Enter end date in format {0}'
+    'End date is in invalid format. Enter end date in format {0}': 'End date is in invalid format. Enter end date in format {0}',
+    'Select an image': 'Select an image',
+    'Remove': 'Remove',
+    'Change': 'Change'
   });
 }();
 
