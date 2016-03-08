@@ -39,10 +39,15 @@
     'Maximum number of characters': 'Maximum number of characters',
     'Name': 'Name',
     'Value': 'Value',
-    'Width (3 = small, 6 = default, 12 = wide)': 'Width (3 = small, 6 = default, 12 = wide)',
+    'Width': 'Width',
+    'Small': 'Small',
+    'Default': 'Default',
+    'Wide': 'Wide',
     'Error Message': 'Error message',
     'Hint text': 'Hint text',
-    'Value List': 'Value List'
+    'Value List': 'Value List',
+    'Do not show the label': 'Do not show the label',
+    'Placeholder text': 'Placeholder text'
   });
 }();
 

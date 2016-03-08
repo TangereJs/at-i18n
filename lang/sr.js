@@ -39,10 +39,15 @@
         'Maximum number of characters': 'Maksimalni broj karaktera',
         'Name': 'Naziv',
         'Value': 'Vrednost',
-        'Width (3 = small, 6 = default, 12 = wide)': 'Sirina (3 = usko, 6 = podrazumevano, 12 = široko)',
+        'Width': 'Širina',
+        'Small': 'Usko',
+        'Default': 'Podrazumevano',
+        'Wide': 'Široko',
         'Error Message': 'Poruka o grešci',
         'Hint text': 'Objašnjenje',
-        'Value List': 'Lista vrednosti'
+        'Value List': 'Lista vrednosti',
+        'Do not show the label': 'Sakrij labelu',
+        'Placeholder text': 'Tekst za placeholder'
     });
 }();
 
