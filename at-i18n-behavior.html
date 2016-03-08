@@ -1,8 +1,6 @@
 <link rel="import" href="../tangere/tangere.html">
 
-<script src="lang/en.js" charset="utf-8"></script>
-<script src="lang/de.js" charset="utf-8"></script>
-<script src="lang/sr.js" charset="utf-8"></script>
+
 <script>
   Tangere.behaviors.i18n = {
 
@@ -12,15 +10,28 @@
     },
 
 
-    _localizedFormat: function(name) {
-      return this.T("$format-" + name);
+    _localizedFormat: function (name) {
+
+      var defaults = {
+        '$format-date': 'M/D/YYYY',
+        '$format-time': 'HH:mm:ss',
+        '$format-datetime': 'M/D/YYYY hh:mm A',
+      }
+
+      var key = "$format-" + name;
+      var r = this.T(key);
+      
+      if(r == key) r = defaults[key];
+      
+      return r;
+      
     },
     T: function (key) {
       if (!this._i18nGlobal) this._initialize();
       var args = Array.prototype.slice.call(arguments, 1);
       var msg = undefined;
-      if(!msg && this._i18n) msg = this._i18n[key]; // check for module specific msg
-      if(!msg && this._i18nGlobal) msg = this._i18nGlobal[key]; // fallback to global msg
+      if (!msg && this._i18n) msg = this._i18n[key]; // check for module specific msg
+      if (!msg && this._i18nGlobal) msg = this._i18nGlobal[key]; // fallback to global msg
       if (!msg) msg = key; // fallback to key if no msg is available
       return this._format(msg, args);
     },
@@ -44,10 +55,10 @@
       this._i18nGlobal = this._getMsgForModule("global", lang);
     },
 
-    _getMsgForModule: function(module, locale) {
+    _getMsgForModule: function (module, locale) {
       var elementLocales = Polymer.atI18nLocales[module];
       var result = undefined;
-      if(!elementLocales) return result; // no messages for module found
+      if (!elementLocales) return result; // no messages for module found
 
       while (locale) {
         result = elementLocales[locale.toLowerCase()];
