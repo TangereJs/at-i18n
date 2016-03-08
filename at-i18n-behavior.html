@@ -1,6 +1,8 @@
 <link rel="import" href="../tangere/tangere.html">
 
-
+<script src="lang/en.js" charset="utf-8"></script>
+<script src="lang/de.js" charset="utf-8"></script>
+<script src="lang/sr.js" charset="utf-8"></script>
 <script>
   Tangere.behaviors.i18n = {
 
@@ -29,7 +31,7 @@
         lang = navigator.languages[0];
       }
 
-      lang = Tangere.session.user.lang || lang;      
+      lang = Tangere.session.user.lang || lang;
       return lang;
     },
     _initialize: function () {
@@ -61,17 +63,17 @@
     },
 
     _format: function (format, args) {
-      
+
       // replace {n}
       var fmt = format.replace(/{(\d+)}/g, function (match, number) {
         return typeof args[number] != 'undefined' ? args[number] : match;
       });
 
       // replace [n]
-      fmt = fmt.replace(/\[(\d+)\]/g, function (match, number) {          
+      fmt = fmt.replace(/\[(\d+)\]/g, function (match, number) {
         return typeof args[number] != 'undefined' ? args[number] : match;
       });
-      
+
       return fmt;
     }
 
