@@ -45,7 +45,16 @@
     'Hint text': 'Hint text',
     'Value List': 'Value List',
     'Do not show the label': 'Do not show the label',
-    'Placeholder text': 'Placeholder text'
+    'Placeholder text': 'Placeholder text',
+    'Maximum number of selectable items': 'Maximum number of selectable items',
+    'Url': 'Url',
+    'Allow new entries': 'Allow new entries',
+    'Values': 'Values',
+    'Button icon name': 'Button icon name',
+    'Allowed file extensions': 'Allowed file extensions',
+    'Maximum number of files': 'Maximum number of files',
+    'Maximum file size (in bytes)': 'Maximum file size (in bytes)',
+    'Minimum file size (in bytes)': 'Minimum file size (in bytes)'
   });
 }();
 

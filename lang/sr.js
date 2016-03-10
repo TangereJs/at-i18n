@@ -47,7 +47,16 @@
         'Hint text': 'Objašnjenje',
         'Value List': 'Lista vrednosti',
         'Do not show the label': 'Sakrij labelu',
-        'Placeholder text': 'Tekst za placeholder'
+        'Placeholder text': 'Tekst za placeholder',
+        'Maximum number of selectable items': 'Maksimalno izabranih unosa',
+        'Url': 'Url',
+        'Allow new entries': 'Dozovoli pravljenje novih unosa',
+        'Values': 'Vrednosti',
+        'Button icon name': 'Naziv ikone dugmeta',
+        'Allowed file extensions': 'Dozvoljene ekstenzije fajlova',
+        'Maximum number of files': 'Maksimalno fajlova',
+        'Maximum file size (in bytes)': 'Maksimalna veličina fajla (u bajtovima)',
+        'Minimum file size (in bytes)': 'Minimalna veličina fajla (u bajtovima)'
     });
 }();
 
