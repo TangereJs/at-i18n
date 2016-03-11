@@ -54,7 +54,38 @@
     'Allowed file extensions': 'Allowed file extensions',
     'Maximum number of files': 'Maximum number of files',
     'Maximum file size (in bytes)': 'Maximum file size (in bytes)',
-    'Minimum file size (in bytes)': 'Minimum file size (in bytes)'
+    'Minimum file size (in bytes)': 'Minimum file size (in bytes)',
+
+    // at-form-markdown
+    'Attach images by dragging and dropping, {0} selecting them {1}, or pasting from the clipboard.': 'Attach images by dragging and dropping, {0} selecting them {1}, or pasting from the clipboard.',
+    'Attach images by dragging and dropping or {0} selecting them {1}': 'Attach images by dragging and dropping or {0} selecting them {1}',
+    'Strong <strong> Ctrl+B':'Strong <strong> Ctrl+B',
+    'strong text': 'strong text',
+    'Emphasis <em> Ctrl+I': 'Emphasis <em> Ctrl+I',
+    'emphasized text': 'emphasized text',
+    'Hyperlink <a> Ctrl+L': 'Hyperlink <a> Ctrl+L',
+    'enter link description here': 'enter link description here',
+    '<p><b>Insert Hyperlink</b></p><p>http://example.com/ \"optional title\"</p>': '<p><b>Insert Hyperlink</b></p><p>http://example.com/ \"optional title\"</p>',
+    'Blockquote <blockquote> Ctrl+Q': 'Blockquote <blockquote> Ctrl+Q',
+    'Blockquote': 'Blockquote',
+    'Code Sample <pre><code> Ctrl+K': 'Code Sample <pre><code> Ctrl+K',
+    'enter code here': 'enter code here',
+    'Image <img> Ctrl+G': 'Image <img> Ctrl+G',
+    'enter image description here': 'enter image description here',
+    '<p><b>Insert Image</b></p><p>http://example.com/images/diagram.jpg \"optional title\"</p>': '<p><b>Insert Image</b></p><p>http://example.com/images/diagram.jpg \"optional title\"</p>',
+    'Numbered List <ol> Ctrl+O':'Numbered List <ol> Ctrl+O',
+    'Bulleted List <ul> Ctrl+U': 'Bulleted List <ul> Ctrl+U',
+    'List item': 'List item',
+    'Heading <h1>/<h2> Ctrl+H': 'Heading <h1>/<h2> Ctrl+H',
+    'Heading': 'Heading',
+    'Horizontal Rule <hr> Ctrl+R': 'Horizontal Rule <hr> Ctrl+R',
+    'Undo - Ctrl+Z': 'Undo - Ctrl+Z',
+    'Redo - Ctrl+Y': 'Redo - Ctrl+Y',
+    'Redo - Ctrl+Shift+Z': 'Redo - Ctrl+Shift+Z',
+    'Preview': 'Preview',
+    'Hide Preview': 'Hide Preview',
+    'Toggle fullscreen': 'Toggle fullscreen',
+    'Markdown Editing Help': 'Markdown Editing Help'
   });
 }();
 
