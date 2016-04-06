@@ -57,6 +57,8 @@
     'Maximum number of files': 'Maximum number of files',
     'Maximum file size (in bytes)': 'Maximum file size (in bytes)',
     'Minimum file size (in bytes)': 'Minimum file size (in bytes)',
+    'Format': 'Format',
+    'Type': 'Type',
 
     // at-form-markdown
     'Attach images by dragging and dropping, {0} selecting them {1}, or pasting from the clipboard.': 'Attach images by dragging and dropping, {0} selecting them {1}, or pasting from the clipboard.',

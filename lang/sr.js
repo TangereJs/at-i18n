@@ -57,6 +57,8 @@
         'Maximum number of files': 'Maksimalno fajlova',
         'Maximum file size (in bytes)': 'Maksimalna veličina fajla (u bajtovima)',
         'Minimum file size (in bytes)': 'Minimalna veličina fajla (u bajtovima)',
+        'Format': 'Format',
+        'Type': 'Tip',
 
         // at-form-markdown
         'Attach images by dragging and dropping, {0} selecting them {1}, or pasting from the clipboard.': 'Dodaj sliku pomocu drag & drop, {0} izborom sa diska {1} ili nalepi sadrzaj clipboard-a.',
