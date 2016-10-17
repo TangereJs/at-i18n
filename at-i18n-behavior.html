@@ -14,17 +14,17 @@
 
       var defaults = {
         '$format-date': 'M/D/YYYY',
-        '$format-time': 'HH:mm A',
+        '$format-time': 'hh:mm A',
         '$format-datetime': 'M/D/YYYY hh:mm A',
       }
 
       var key = "$format-" + name;
       var r = this.T(key);
-      
+
       if(r == key) r = defaults[key];
-      
+
       return r;
-      
+
     },
     T: function (key) {
       if (!this._i18nGlobal) this._initialize();
