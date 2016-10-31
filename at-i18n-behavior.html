@@ -27,6 +27,7 @@
 
     },
     T: function (key) {
+      if (key === null || key === undefined) return key;
       if (!this._i18nGlobal) this._initialize();
       var args = Array.prototype.slice.call(arguments, 1);
       var msg = undefined;
@@ -51,7 +52,7 @@
 
       var lang = this.getLocale();
 
-      this._i18n = this._getMsgForModule(this.localName, lang);
+      this._i18n = this._getMsgForModule(this.namePrefix !== undefined ? this.namePrefix : this.localName, lang);
       this._i18nGlobal = this._getMsgForModule("global", lang);
     },
 
