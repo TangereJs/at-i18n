@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.1.56",
   "dependencies": {
-    "polymer": "Polymer/polymer#0.8-preview"
+    "tangere": "TangereJs/tangere#0.8-preview",
+    "at-doc-viewer": "TangereJs/at-doc-viewer#0.8-preview"
   }
 }
