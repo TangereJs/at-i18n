@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1.56",
   "dependencies": {
-    "tangere": "TangereJs/tangere#0.8-preview",
-    "at-doc-viewer": "TangereJs/at-doc-viewer#0.8-preview"
+    "tangere": "TangereJs/tangere#master",
+    "at-doc-viewer": "TangereJs/at-doc-viewer#master"
   }
 }
